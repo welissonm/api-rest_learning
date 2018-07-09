@@ -10,4 +10,7 @@ console.log('servidor rodando');
 app.get('/', (req, res) => {
     res.send('Ok');
 })
+
+require('./controllers/authController')(app);
+
 app.listen(3000);
